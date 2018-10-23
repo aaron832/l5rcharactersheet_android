@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/character_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/character_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/character_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/character_name_textView"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:ems="10" >
+    <requestFocus /></EditText>
+        
+    <TextView
+        android:id="@+id/clan_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/character_name_editText"
+        android:layout_marginTop="20dp"
+        android:text="@string/l5rclan"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/clan_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/clan_textView"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/family_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/clan_editText"
+        android:layout_marginTop="20dp"
+        android:text="@string/l5rfamily"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/family_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/family_textView"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/school_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/family_editText"
+        android:layout_marginTop="20dp"
+        android:text="@string/l5rschool"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/school_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/school_textView"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/new_character_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/school_editText"
+        android:layout_marginTop="20dp"
+        android:text="@string/add" />
+
+</RelativeLayout>

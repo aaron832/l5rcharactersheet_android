@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/l5rxp:"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <Button
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/subtractxp"
+        	android:layout_toLeftOf="@+id/textView1"
+        	android:layout_marginRight="20dp" />
+        
+        <Button
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/addxp"
+        	android:layout_toRightOf="@+id/textView1"
+        	android:layout_marginLeft="20dp" />
+
+	</RelativeLayout>
+	
+    <Button
+        	android:id="@+id/xp_traits_button"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0px"
+        	android:layout_weight="1"
+        	android:text="@string/l5rxp_traits_void" />
+    
+    <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="0px"
+        	android:layout_weight="1"
+        	android:text="@string/l5rxp_skills" />
+    
+    <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="0px"
+        	android:layout_weight="1"
+        	android:text="@string/l5rxp_adv_dis" />
+    
+    <Button
+        	android:layout_width="fill_parent"
+        	android:layout_height="0px"
+        	android:layout_weight="1"
+        	android:text="@string/l5rxp_custom" />
+    
+    <View 
+	        android:id="@+id/xp_menu_view_empty"
+	        android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <item name="activity_l5rcharactersheet_list" type="layout">@layout/activity_l5rcharactersheet_twopane</item>
+
+</resources>

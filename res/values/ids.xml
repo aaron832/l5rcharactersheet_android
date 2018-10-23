@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="void_spent_radioButton1" type="id"/>
+    <item name="void_spent_radioButton2" type="id"/>
+    <item name="void_spent_radioButton3" type="id"/>
+    <item name="void_spent_radioButton4" type="id"/>
+    <item name="void_spent_radioButton5" type="id"/>
+    <item name="void_spent_radioButton6" type="id"/>
+    <item name="void_spent_radioButton7" type="id"/>
+    <item name="void_spent_radioButton8" type="id"/>
+    <item name="void_spent_radioButton9" type="id"/> 
+</resources>

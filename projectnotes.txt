@@ -1,0 +1,3 @@
+For XP window... maybe have a list of xp changes... so save the changes to a list.. 
+then the user clicks apply to accept the changes.
+

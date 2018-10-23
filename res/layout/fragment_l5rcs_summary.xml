@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- Character attributes and elements container -->
+    <RelativeLayout
+        android:id="@+id/attribute_element_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true">
+        
+        <!-- Element Attributes -->
+	    <RelativeLayout
+	        android:id="@+id/elements_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp" >
+		    
+	        <RelativeLayout
+	            android:id="@+id/element_earth_layout"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+	            android:background="@color/l5rearth" >
+	            <!-- Earth -->
+			    <TextView
+			        android:id="@+id/earth_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="@string/l5rearth" />  
+			    <TextView
+			        android:id="@+id/earth_value"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignTop="@+id/earth_text"
+			        android:layout_marginLeft="65dp"
+			        android:text="@string/single_digit_default" />
+		    </RelativeLayout>
+		    
+	        <RelativeLayout
+	            android:id="@+id/element_air_layout"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/element_earth_layout"
+	            android:background="@color/l5rair" >
+			    <!-- Air -->
+			    <TextView
+			        android:id="@+id/air_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="@string/l5rair" />  
+			    <TextView
+			        android:id="@+id/air_value"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignTop="@+id/air_text"
+			        android:layout_marginLeft="65dp"
+			        android:text="@string/single_digit_default" />
+		    </RelativeLayout>
+		    
+	        <RelativeLayout
+	            android:id="@+id/element_water_layout"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/element_air_layout"
+	            android:background="@color/l5rwater" >
+			    <!-- Water -->
+			    <TextView
+			        android:id="@+id/water_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="@string/l5rwater" />  
+			    <TextView
+			        android:id="@+id/water_value"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignTop="@+id/water_text"
+			        android:layout_marginLeft="65dp"
+			        android:text="@string/single_digit_default" />
+		    </RelativeLayout>
+		    
+	        <RelativeLayout
+	            android:id="@+id/element_fire_layout"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/element_water_layout"
+	            android:background="@color/l5rfire" >
+			    <!-- Fire -->
+			    <TextView
+			        android:id="@+id/fire_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="@string/l5rfire" />  
+			    <TextView
+			        android:id="@+id/fire_value"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignTop="@+id/fire_text"
+			        android:layout_marginLeft="65dp"
+			        android:text="@string/single_digit_default" />
+		    </RelativeLayout>
+		    
+	        <RelativeLayout
+	            android:id="@+id/element_void_layout"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/element_fire_layout"
+	            android:background="@color/l5rvoid" >
+			    <!-- Void -->
+			    <TextView
+			        android:id="@+id/void_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="@string/l5rvoid" />  
+			    <TextView
+			        android:id="@+id/void_value"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignTop="@+id/void_text"
+			        android:layout_marginLeft="65dp"
+			        android:text="@string/single_digit_default" />
+		    </RelativeLayout>
+		</RelativeLayout>
+        
+        <!-- Earth Attributes -->
+	    <RelativeLayout
+	        android:id="@+id/earth_attributes_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:layout_toLeftOf="@+id/elements_layout"
+		    android:layout_alignParentTop="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@color/l5rearth" >
+	        <!-- Stamina -->
+		    <TextView
+		        android:id="@+id/stamina_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rstamina" />  
+		    <TextView
+		        android:id="@+id/stamina_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/stamina_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+		    <!-- Willpower -->
+		    <TextView
+		        android:id="@+id/willpower_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/stamina_text"
+		        android:layout_below="@+id/stamina_text"
+		        android:text="@string/l5rwillpower"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/willpower_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/willpower_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+	    </RelativeLayout>
+    
+	    <!-- Water Attributes -->
+	    <RelativeLayout
+	        android:id="@+id/water_attributes_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/elements_layout"
+	        android:layout_below="@+id/earth_attributes_layout"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@color/l5rwater">
+		    <!-- Strength -->
+		    <TextView
+		        android:id="@+id/strength_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/stamina_text"
+		        android:layout_below="@+id/willpower_text"
+		        android:text="@string/l5rstrength"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/strength_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/strength_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+		    <!-- Perception -->
+		    <TextView
+		        android:id="@+id/perception_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/stamina_text"
+		        android:layout_below="@+id/strength_text"
+		        android:text="@string/l5rperception"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/perception_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/perception_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+        </RelativeLayout>
+    
+	    <View 
+	        android:id="@+id/right_attributes_helper"
+			android:layout_width="1dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="105dp" />
+        <!-- Air Attributes -->
+        <RelativeLayout
+            android:id="@+id/air_attributes_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/elements_layout"
+	        android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/l5rair">
+		    <!-- Reflexes -->
+		    <TextView
+		        android:id="@+id/reflexes_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rreflexes" />
+		    <TextView
+		        android:id="@+id/reflexes_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/reflexes_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+		    <!-- Awareness -->
+		    <TextView
+		        android:id="@+id/awareness_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/reflexes_text"
+		        android:layout_below="@+id/reflexes_text"
+		        android:text="@string/l5rawareness"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/awareness_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/awareness_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />    
+		</RelativeLayout>
+    
+	    <!-- Fire Attributes -->
+	    <RelativeLayout
+	        android:id="@+id/fire_attributes_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/elements_layout"
+	        android:layout_below="@+id/air_attributes_layout"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:background="@color/l5rfire">
+		    <!-- Agility -->
+		    <TextView
+		        android:id="@+id/agility_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5ragility"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/agility_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/agility_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+		    <!-- Intelligence -->
+		    <TextView
+		        android:id="@+id/intelligence_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/agility_text"
+		        android:layout_below="@+id/agility_text"
+		        android:text="@string/l5rintelligence"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/intelligence_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/intelligence_text"
+		        android:layout_marginLeft="85dp"
+		        android:text="@string/single_digit_default" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <!-- Reputation Attributes -->
+    <RelativeLayout
+	    android:id="@+id/reputation_attributes_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/attribute_element_layout"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp">
+	    <View 
+	        android:id="@+id/middle_rep_helper"
+			android:layout_width="1dp"
+			android:layout_height="50dp"
+			android:layout_centerHorizontal="true"/>
+	    <!-- Honor -->
+		<RelativeLayout
+		    android:id="@+id/honor_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toLeftOf="@+id/middle_rep_helper"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="20dp">
+	        <TextView
+		        android:id="@+id/honor_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rhonor" />  
+		    <TextView
+		        android:id="@+id/honor_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/honor_text"
+		        android:layout_marginLeft="65dp"
+		        android:text="@string/single_digit_default" />
+	    </RelativeLayout>
+	    <!-- Glory -->
+	    <RelativeLayout
+		    android:id="@+id/glory_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/middle_rep_helper"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="20dp">
+	        <TextView
+		        android:id="@+id/glory_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rglory" />  
+		    <TextView
+		        android:id="@+id/glory_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/honor_text"
+		        android:layout_marginLeft="65dp"
+		        android:text="@string/single_digit_default" />
+	    </RelativeLayout>
+	    <!-- Status -->
+	    <RelativeLayout
+		    android:id="@+id/status_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toLeftOf="@+id/middle_rep_helper"
+			android:layout_below="@+id/honor_layout"
+			android:layout_marginRight="20dp">
+	        <TextView
+		        android:id="@+id/status_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rstatus" />  
+		    <TextView
+		        android:id="@+id/status_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/status_text"
+		        android:layout_marginLeft="65dp"
+		        android:text="@string/single_digit_default" />
+	    </RelativeLayout>
+	    <!-- Taint -->
+	    <RelativeLayout
+		    android:id="@+id/taint_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/middle_rep_helper"
+			android:layout_below="@+id/glory_layout"
+			android:layout_marginLeft="20dp">
+	        <TextView
+		        android:id="@+id/taint_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/l5rtaint" />  
+		    <TextView
+		        android:id="@+id/taint_value"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignTop="@+id/taint_text"
+		        android:layout_marginLeft="65dp"
+		        android:text="@string/single_digit_default" />
+	    </RelativeLayout>
+	</RelativeLayout>
+
+    <!-- Void Spend Display -->
+    <RelativeLayout
+	    android:id="@+id/void_spent_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/reputation_attributes_layout"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp">
+	    <TextView
+	        android:id="@+id/void_spent_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/l5rvoidspent"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <RelativeLayout
+		    android:id="@+id/void_spent_radio_layout"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/void_spent_title"
+		    android:layout_centerHorizontal="true">
+		    
+		    <!-- RADIO BUTTONS PROGRAMATICALLY ADDED -->
+		    
+		</RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Combat Status Display -->
+    <RelativeLayout
+	    android:id="@+id/combat_status_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/void_spent_layout"
+	    android:layout_centerInParent="true"
+	    android:layout_marginTop="10dp">
+	    <View 
+	        android:id="@+id/middle_combat_status_helper"
+			android:layout_width="1dp"
+			android:layout_height="50dp"
+			android:layout_centerHorizontal="true"/>
+	    <!-- Movement Table -->
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/movement_table_layout"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentTop="true"
+		    android:layout_toLeftOf="@+id/middle_combat_status_helper"
+		    android:layout_marginRight="10dp">
+		    <!-- Table Title -->
+		    <TableRow  
+		        android:id="@+id/movement_table_header"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">  
+		        <TextView
+			        android:id="@+id/movement_table_header_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="5dp"
+        			android:paddingRight="5dp"
+			        android:textStyle="bold"
+			        android:gravity="center_horizontal"
+		        	android:background="@color/l5rtableheaderbg"
+			        android:textColor="@color/l5rtableheadertext"
+			        android:text="@string/l5rmovement" /> 
+		    </TableRow>
+		    <!-- Table Content-->
+		    <TableRow  
+		        android:id="@+id/movement_table_contents_row"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">
+		        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    			android:id="@+id/movement_content_table_layout"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content">
+	    			<TableRow  
+				        android:id="@+id/movement_table_row1"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/movement_table_free_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rfreeaction" />  
+				        <TextView
+					        android:id="@+id/movement_table_free_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>   
+				    <TableRow  
+				        android:id="@+id/movement_table_row2"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/movement_table_simple_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rsimpleaction" />  
+				        <TextView
+					        android:id="@+id/movement_table_simple_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+				    <TableRow  
+				        android:id="@+id/movement_table_row3"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/movement_table_max_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rmax" />  
+				        <TextView
+					        android:id="@+id/movement_table_max_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+			    </TableLayout>
+			</TableRow> 
+	    </TableLayout>
+	    
+	    <!-- Initiative Table -->
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/initiative_table_layout"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentTop="true"
+		    android:layout_toRightOf="@+id/middle_combat_status_helper"
+		    android:layout_marginLeft="10dp">
+		    <!-- Table Title -->
+		    <TableRow  
+		        android:id="@+id/initiative_table_header"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">  
+		        <TextView
+			        android:id="@+id/initiative_table_header_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="5dp"
+        			android:paddingRight="5dp"
+			        android:textStyle="bold"
+			        android:gravity="center_horizontal"
+		        	android:background="@color/l5rtableheaderbg"
+			        android:textColor="@color/l5rtableheadertext"
+			        android:text="@string/l5rinitiative" /> 
+		    </TableRow>
+		    <!-- Table Content-->
+		    <TableRow  
+		        android:id="@+id/initiative_table_contents_row"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">
+		        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    			android:id="@+id/initiative_content_table_layout"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content">
+				    <TableRow  
+				        android:id="@+id/initiative_table_row1"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/initiative_table_roll_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rroll" />  
+				        <TextView
+					        android:id="@+id/initiative_table_roll_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/zero_roll_default" />  
+				    </TableRow>
+				    <TableRow  
+				        android:id="@+id/initiative_table_row2"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/initiative_table_current_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rcurrent_initiative" />  
+				        <TextView
+					        android:id="@+id/initiative_table_current_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+			    </TableLayout>
+			</TableRow> 
+	    </TableLayout>
+	    
+	    <!-- Amor and TN Table -->
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/armor_tn_table_layout"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/movement_table_layout"
+		    android:layout_toLeftOf="@+id/middle_combat_status_helper"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="10dp">
+		    <!-- Table Title -->
+		    <TableRow  
+		        android:id="@+id/armor_tn_table_header"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">  
+		        <TextView
+			        android:id="@+id/armor_tn_table_header_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="5dp"
+        			android:paddingRight="5dp"
+			        android:textStyle="bold"
+			        android:gravity="center_horizontal"
+		        	android:background="@color/l5rtableheaderbg"
+			        android:textColor="@color/l5rtableheadertext"
+			        android:text="@string/l5rarmor_tn" /> 
+		    </TableRow>
+		    <!-- Table Content-->
+		    <TableRow  
+		        android:id="@+id/armor_tn_table_contents_row"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">
+		        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    			android:id="@+id/armor_tn_content_table_layout"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content">   
+				    <TableRow  
+				        android:id="@+id/armor_tn_table_row1"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/armor_tn_table_simple_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rreduction" />  
+				        <TextView
+					        android:id="@+id/armor_tn_table_simple_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+				    <TableRow  
+				        android:id="@+id/armor_tn_table_row2"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/armor_tn_table_complex_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rcurrent_tn" />  
+				        <TextView
+					        android:id="@+id/armor_tn_table_complex_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+			    </TableLayout>
+			</TableRow> 
+	    </TableLayout>
+	    
+	    <!-- Wounds Table -->
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:id="@+id/wounds_table_layout"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/initiative_table_layout"
+		    android:layout_toRightOf="@+id/middle_combat_status_helper"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp">
+		    <!-- Table Title -->
+		    <TableRow  
+		        android:id="@+id/wounds_table_header"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">  
+		        <TextView
+			        android:id="@+id/wounds_table_header_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="5dp"
+        			android:paddingRight="5dp"
+			        android:textStyle="bold"
+			        android:gravity="center_horizontal"
+		        	android:background="@color/l5rtableheaderbg"
+			        android:textColor="@color/l5rtableheadertext"
+			        android:text="@string/l5rwounds" /> 
+		    </TableRow>
+		    <!-- Table Content-->
+		    <TableRow  
+		        android:id="@+id/wounds_table_contents_row"  
+		        android:layout_height="wrap_content"  
+		        android:layout_width="wrap_content">
+		        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    			android:id="@+id/wounds_content_table_layout"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content">   
+				    <TableRow  
+				        android:id="@+id/wounds_table_row1"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/wounds_table_simple_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rcurrent_wounds" />  
+				        <TextView
+					        android:id="@+id/wounds_table_current_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+				    <TableRow  
+				        android:id="@+id/wounds_table_row2"  
+				        android:layout_height="wrap_content"  
+				        android:layout_width="match_parent">  
+				        <TextView
+					        android:id="@+id/wounds_table_level_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+		        			android:background="@color/l5rtableproprtytitlebg"
+					        android:text="@string/l5rwounds_level" />  
+				        <TextView
+					        android:id="@+id/wounds_table_level_value"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:gravity="right"
+					        android:paddingLeft="5dp"
+		        			android:paddingRight="5dp"
+		        			android:layout_weight="1"
+					        android:text="@string/single_digit_default" />  
+				    </TableRow>
+			    </TableLayout>
+			</TableRow> 
+	    </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

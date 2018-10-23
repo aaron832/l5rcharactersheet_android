@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"> 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal">
+		    <TextView
+	            android:id="@+id/xp_traits_xp_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/l5rxp:"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		    <TextView
+	            android:id="@+id/xp_traits_xp_value"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/single_digit_default"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	</LinearLayout>
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"> 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	    android:orientation="vertical"  
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content">  
+	    
+	    <!-- STAMINA TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rearth">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_stamina_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rstamina"/>
+		        <TextView
+		            android:id="@+id/xp_traits_stamina_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rearth"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_stamina_value"
+	            style="@style/xp_trait_value" />
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_stamina_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol" />
+		        <Button
+		            android:id="@+id/xp_add_stamina_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol" />
+	        </LinearLayout> 
+		</LinearLayout> 
+		
+	    <!-- WILLPOWER TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rearth">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_willpower_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rwillpower"/>
+		        <TextView
+		            android:id="@+id/xp_traits_willpower_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rearth"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_willpower_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_willpower_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_willpower_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- STRENGTH TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rwater">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_strength_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rstrength"/>
+		        <TextView
+		            android:id="@+id/xp_traits_strength_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rwater"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_strength_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_strength_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_strength_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- PERCEPTION TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rwater">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_perception_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rperception"/>
+		        <TextView
+		            android:id="@+id/xp_traits_perception_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rwater"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_perception_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_perception_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_perception_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- AWARENESS TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rair">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_reflexes_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rreflexes"/>
+		        <TextView
+		            android:id="@+id/xp_traits_reflexes_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rair"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_reflexes_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_reflexes_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_reflexes_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- AWARENESS TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rair">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_awareness_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rawareness"/>
+		        <TextView
+		            android:id="@+id/xp_traits_awareness_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rair"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_awareness_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_awareness_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_awareness_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- AGILITY TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rfire">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_agility_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5ragility"/>
+		        <TextView
+		            android:id="@+id/xp_traits_agility_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rfire"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_agility_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_agility_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_agility_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- INTELLIGENCE TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rfire">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_intelligence_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rintelligence"/>
+		        <TextView
+		            android:id="@+id/xp_traits_intelligence_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rfire"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_intelligence_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_intelligence_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_intelligence_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	    <!-- VOID TRAIT -->
+	    <LinearLayout  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:background="@color/l5rvoid">
+	
+	        <LinearLayout  
+			    android:orientation="vertical"  
+			    android:layout_width="150dp"  
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/xp_traits_void_text"
+		            style="@style/xp_trait_title"
+		            android:text="@string/l5rvoid"/>
+		        <TextView
+		            android:id="@+id/xp_traits_void_text_element"
+		            style="@style/xp_trait_sub_title"
+		            android:text="@string/l5rvoid"/>
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/xp_traits_void_value"
+	            style="@style/xp_trait_value" />
+
+	        <LinearLayout  
+		    	android:orientation="horizontal"  
+		    	android:layout_width="wrap_content"  
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1">
+		        <Button
+		            android:id="@+id/xp_sub_void_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/sub_symbol"/>
+		        <Button
+		            android:id="@+id/xp_add_void_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/add_symbol"/>
+		    </LinearLayout>
+		</LinearLayout>
+			
+	</LinearLayout> 
+	</ScrollView>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+		    android:orientation="horizontal"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal">
+		    <Button
+		        android:id="@+id/button1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/done" />
+
+	</LinearLayout> 
+</LinearLayout> 
